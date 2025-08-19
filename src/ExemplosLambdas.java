@@ -6,7 +6,7 @@ import java.util.function.Supplier;
 public class ExemplosLambdas {
     public static void main(String[] args) {
         // Predicate: verifica se o nome tem mais de 5 letras
-        Predicate<String> nomeLongo = nome -> nome.length() > 5;
+        Predicate<String> nomeLongo = (s) -> s.length() > 5;
         System.out.println(nomeLongo.test("Gandalf")); // true
 
         // Function: converte String para inteiro (tamanho)

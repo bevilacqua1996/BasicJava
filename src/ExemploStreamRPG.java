@@ -15,8 +15,14 @@ public class ExemploStreamRPG {
         );
 
         personagens.stream()
-                .filter(p -> p instanceof Mago)
-                .map(p -> p.getNome() + " é um " + p.getTipo() + " com força " + p.getForca())
+                .filter(Mago.class::isInstance)
+                .map(ExemploStreamRPG::formataDescricao)
                 .forEach(System.out::println);
+
+
+    }
+
+    public static String formataDescricao(Personagem p) {
+        return p.getNome() + " é um " + p.getTipo() + " com força " + p.getForca();
     }
 }

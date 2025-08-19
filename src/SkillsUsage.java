@@ -6,8 +6,8 @@ public class SkillsUsage {
 
     public static void main(String[] args) {
         // Exemplo de uso de habilidades de um Guerreiro
-        HabilidadesGuerreiro habilidadesGuerreiro = () -> System.out.println("Guerreiro usa explosão!");
-        habilidadesGuerreiro.explosao();
+        HabilidadesGuerreiro habilidadesGuerreiro = (s, s2) -> System.out.println(s + " " + s2 + " " +"Guerreiro usa explosão!");
+        habilidadesGuerreiro.explosao("TESTE", "Guerreiro");
 
         // Exemplo de uso de habilidades de um Mago
 

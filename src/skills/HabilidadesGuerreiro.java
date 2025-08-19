@@ -2,5 +2,5 @@ package skills;
 
 @FunctionalInterface
 public interface HabilidadesGuerreiro {
-    void explosao();
+    void explosao(String a, String b);
 }
